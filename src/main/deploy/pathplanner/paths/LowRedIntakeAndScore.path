@@ -1,0 +1,70 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.757222222222223,
+        "y": 0.702399999999999
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 9.00382070318026,
+        "y": 0.7434997468263391
+      },
+      "isLocked": false,
+      "linkedName": "LowRedIntakeAndScore"
+    },
+    {
+      "anchor": {
+        "x": 8.747477777777778,
+        "y": 7.465044444444444
+      },
+      "prevControl": {
+        "x": 8.497477777777778,
+        "y": 7.465044444444444
+      },
+      "nextControl": {
+        "x": 8.997477777777778,
+        "y": 7.465044444444444
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 13.385833333337809,
+        "y": 7.465044444444444
+      },
+      "prevControl": {
+        "x": 12.849888888893364,
+        "y": 7.513766666666666
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 75.32360686255005
+  },
+  "reversed": false,
+  "folder": "RedAllianceOuttake",
+  "idealStartingState": {
+    "velocity": 0.0,
+    "rotation": 90.0
+  },
+  "useDefaultConstraints": true
+}

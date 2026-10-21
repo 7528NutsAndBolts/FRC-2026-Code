@@ -1,0 +1,59 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 13.81458888888889,
+        "y": 2.6415444444444436
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 17.312844444444448,
+        "y": -0.4415333333333362
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 8.757222222222223,
+        "y": 0.702399999999999
+      },
+      "prevControl": {
+        "x": 8.549209648637758,
+        "y": 0.8410750490562999
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "LowRedIntakeAndScore"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.5,
+      "rotationDegrees": 90.0
+    }
+  ],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 90.0
+  },
+  "reversed": false,
+  "folder": "RedAllianceIntake",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -42.95459151111271
+  },
+  "useDefaultConstraints": true
+}

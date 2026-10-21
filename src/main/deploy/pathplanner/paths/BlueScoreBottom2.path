@@ -1,0 +1,70 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 7.724311111111113,
+        "y": 2.0178999999999996
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.54891111111111,
+        "y": 0.488022222222221
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 5.590277777777779,
+        "y": 0.6147000000000002
+      },
+      "prevControl": {
+        "x": 7.178985873006757,
+        "y": 0.7139942559518111
+      },
+      "nextControl": {
+        "x": 4.187077777777778,
+        "y": 0.5270000000000004
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.9690222222222222,
+        "y": 0.6147000000000002
+      },
+      "prevControl": {
+        "x": 2.7274634873219106,
+        "y": 0.6791156626400827
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -121.50426671920417
+  },
+  "reversed": false,
+  "folder": "BlueAllianceOuttake",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -87.91743472026934
+  },
+  "useDefaultConstraints": true
+}
