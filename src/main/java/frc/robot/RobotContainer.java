@@ -157,6 +157,14 @@ public class RobotContainer {
    * {@link edu.wpi.first.wpilibj2.command.button.CommandJoystick Flight
    * joysticks}.
    */
+
+  private double getRotationalRate() {
+    double targetOrientation = Math.atan2(driverController.getRightY(),driverController.getRightX());
+    double currentOrientation = logger.getPose2D(drivetrain.getState()).getRotation().getRadians();
+    double P = 1;
+    return Math.min((targetOrientation - currentOrientation) * P * MaxAngularRate,MaxAngularRate);
+  }
+
   private void configureBindings() { 
 
     // DRIVE
@@ -165,10 +173,10 @@ public class RobotContainer {
             drivetrain.applyRequest(() ->
                 drive.withVelocityX(driverController.getLeftY() * MaxSpeed) // Drive forward with negative Y (forward)
                      .withVelocityY(driverController.getLeftX() * MaxSpeed) // Drive left with negative X (left)  
-                     .withRotationalRate(-driverController.getRightX() * MaxAngularRate) // Rotate clockwise with positive X (right)
+                     .withRotationalRate(getRotationalRate()) // Rotate clockwise with positive X (right)
             )
         );
-     driverController.rightStick().onTrue(new TurnAround(drivetrain).withTimeout(0.6));    // 180 degree turn around  [ RS ]
+     //driverController.rightStick().onTrue(new TurnAround(drivetrain).withTimeout(0.6));    // 180 degree turn around  [ RS ]
      drivetrain.registerTelemetry(logger::telemeterize);
      driverController.x().onTrue(drivetrain.runOnce(() -> drivetrain.seedFieldCentric()));  // REALIGN [ X ]
     

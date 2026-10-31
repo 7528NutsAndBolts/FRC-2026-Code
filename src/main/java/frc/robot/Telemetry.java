@@ -121,4 +121,8 @@ public class Telemetry {
             SmartDashboard.putData("Module " + i, m_moduleMechanisms[i]);
         }
     }
+
+    public Pose2d getPose2D(SwerveDriveState state) {
+        return state.Pose;
+    }
 }
